@@ -65,7 +65,7 @@
   <exec executable="phpunit" failonerror="true">
     <arg value="--bootstrap" />
     <arg value="${basedir}/src/money.php" />
-    <arg value="${basedir}/tests/MoneyTest" />
+    <arg value="${basedir}/tests/MoneyTest.php" />
     <arg path="${basedir}/src" />
   </exec>
  </target>
