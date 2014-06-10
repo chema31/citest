@@ -1,7 +1,7 @@
 <project name="citest" default="build">
- <target name="build" depends="prepare,lint,phploc,phpcpd,phpdox"/>
+ <target name="build" depends="prepare,lint,phploc,phpcpd,phpdox,phpunit"/>
 
- <target name="build-parallel" depends="prepare,lint,tools-parallel"/>
+ <target name="build-parallel" depends="prepare,lint,tools-parallel,phpunit"/>
 
  <target name="tools-parallel" description="Run tools in parallel">
   <parallel threadCount="2">
@@ -59,6 +59,10 @@
 
  <target name="phpdox" description="Generate API documentation using phpDox">
   <exec executable="phpdox"/>
+ </target>
+
+ <target name="phpunit" description="Run unit tests with PHPUnit">
+  <exec executable="phpunit" failonerror="true"/>
  </target>
 
 </project>
