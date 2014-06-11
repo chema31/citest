@@ -117,11 +117,7 @@
  </target>
 
  <target name="phpunit" description="Run unit tests with PHPUnit">
-  <exec executable="phpunit" failonerror="true">
-    <arg value="--verbose" />
-    <arg value="MoneyTest" />
-    <arg path="${basedir}/tests/MoneyTest.php" />
-  </exec>
+  <exec executable="phpunit" failonerror="true" />
  </target>
 
 </project>
