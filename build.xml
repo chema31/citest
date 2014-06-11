@@ -123,5 +123,4 @@
     <arg path="${basedir}/tests/MoneyTest" />
   </exec>
  </target>
-
 </project>
