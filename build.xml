@@ -120,7 +120,7 @@
   <exec executable="phpunit" failonerror="true">
     <arg value="--verbose" />
     <arg value="MoneyTest" />
-    <arg path="${basedir}/tests" />
+    <arg path="${basedir}/tests/bootstrap.php" />
   </exec>
  </target>
 
