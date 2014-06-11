@@ -40,8 +40,6 @@
  * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License
  * @link       http://www.github.com/sebastianbergmann/money
  */
-
-include_once('../src/model/money.php');
 namespace SebastianBergmann\Money;
 
 class MoneyTest extends \PHPUnit_Framework_TestCase
